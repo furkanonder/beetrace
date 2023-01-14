@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "-v"
+xfail_strict = true
+testpaths = ["tests"]
+
+[tool.isort]
+profile = "black"
+line_length = 120
+skip_gitignore = true
+
+[tool.black]
+line-length = 120
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+
+[tool.unimport]
+remove = true
+include_start_import = true
+ignore_init = true
+gitignore = true
+
+[tool.docformatter]
+recursive = true
+wrap-summaries = 79
+wrap-descriptions = 79
+blank = true
+
+[tool.mypy]
+warn_unused_configs = true
+no_strict_optional = true
+ignore_missing_imports = true
+show_error_codes = true
