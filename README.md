@@ -3,7 +3,7 @@
   <h2>Trace your python process line by line with low overhead!</h2>
 </div>
 
-_beatrace_ allows you to trace a Python process line by line or the functions' entries
+_beetrace_ allows you to trace a Python process line by line or the functions' entries
 and returns. It uses USDT(User Statically-Defined Tracing) probes with
 [bpftrace](https://github.com/iovisor/bpftrace/).
 
